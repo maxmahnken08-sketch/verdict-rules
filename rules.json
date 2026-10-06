@@ -1,0 +1,112 @@
+{
+  "version": 2,
+  "updatedAt": "2026-10-06",
+  "food": [
+    { "keywords": ["partially hydrogenated"], "reason": "A trans fat source linked to heart disease, even in small amounts.", "severity": "Avoid" },
+    { "keywords": ["high fructose corn syrup", "high-fructose corn syrup"], "reason": "A concentrated added sugar linked to metabolic issues when consumed often.", "severity": "Avoid" },
+    { "keywords": ["potassium bromate"], "reason": "Banned as a food additive in the EU, UK, and Canada over cancer concerns.", "severity": "Avoid" },
+    { "keywords": ["brominated vegetable oil", "bvo"], "reason": "Banned in the EU and Japan; brominated compounds can build up in body fat.", "severity": "Avoid" },
+    { "keywords": ["azodicarbonamide"], "reason": "Also used in foam plastics; banned as a food additive in the EU and UK.", "severity": "Avoid" },
+    { "keywords": ["olestra"], "reason": "A fat substitute that can block absorption of fat-soluble vitamins.", "severity": "Avoid" },
+    { "keywords": ["red 40", "red no. 40", "red dye 40", "yellow 5", "yellow 6", "blue 1", "blue 2", "fd&c"], "reason": "A synthetic dye linked to hyperactivity in sensitive children; carries a warning label in the EU.", "severity": "Caution" },
+    { "keywords": ["sodium nitrite", "sodium nitrate", "potassium nitrite", "potassium nitrate"], "reason": "A cured-meat preservative that can form carcinogenic compounds when heated at high temp.", "severity": "Caution" },
+    { "keywords": ["bha", "butylated hydroxyanisole", "bht", "butylated hydroxytoluene"], "reason": "A synthetic preservative flagged as a possible carcinogen by some health agencies.", "severity": "Caution" },
+    { "keywords": ["aspartame"], "reason": "An artificial sweetener some people are sensitive to; debated long-term safety.", "severity": "Caution" },
+    { "keywords": ["titanium dioxide"], "reason": "A whitening agent banned as a food additive in the EU since 2022.", "severity": "Caution" },
+    { "keywords": ["carrageenan"], "reason": "A thickener linked to digestive inflammation in some studies.", "severity": "Caution" },
+    { "keywords": ["sodium benzoate"], "reason": "Can form benzene, a carcinogen, when combined with vitamin C in a product.", "severity": "Caution" },
+    { "keywords": ["monosodium glutamate", "msg", "autolyzed yeast"], "reason": "Generally recognized as safe, but can trigger headaches or flushing in sensitive people.", "severity": "Caution" },
+    { "keywords": ["propylene glycol"], "reason": "A synthetic solvent also used in antifreeze and cosmetics.", "severity": "Caution" },
+    { "keywords": ["artificial flavor", "artificial flavour"], "reason": "An umbrella term for unnamed synthetic flavor compounds.", "severity": "Caution" },
+    { "keywords": ["natural flavor", "natural flavour"], "reason": "A broad, unregulated term that can hide dozens of compounds.", "severity": "Caution" },
+    { "keywords": ["maltodextrin"], "reason": "A highly processed starch-derived filler/thickener; a marker of heavy processing.", "severity": "Caution" },
+    { "keywords": ["palm oil", "palm kernel oil"], "reason": "High in saturated fat; also a major driver of deforestation.", "severity": "Caution" },
+    { "keywords": ["modified corn starch", "modified food starch"], "reason": "A heavily processed thickener; in the US it can legally be wheat-derived without saying so beyond allergen labeling.", "severity": "Caution" }
+  ],
+  "clothing": [
+    { "keywords": ["pfas", "perfluor", "durable water repellent", "dwr", "stain resistant", "stain-resistant", "stain release"], "reason": "\"Forever chemicals\" used for water/stain resistance; linked to hormone disruption and slow to leave the body.", "severity": "Avoid" },
+    { "keywords": ["formaldehyde"], "reason": "Used in wrinkle-resistant and permanent-press finishes; a known irritant and carcinogen.", "severity": "Avoid" },
+    { "keywords": ["flame retardant", "flame-retardant"], "reason": "Chemical flame retardants can leach out and have been linked to hormone disruption.", "severity": "Avoid" },
+    { "keywords": ["azo dye", "azo-dye"], "reason": "Some azo dyes break down into aromatic amines linked to cancer; banned in parts of the EU.", "severity": "Caution" },
+    { "keywords": ["wrinkle-free", "wrinkle free", "wrinkle resistant", "permanent press", "easy care", "no-iron", "non-iron"], "reason": "Usually achieved with a formaldehyde-based resin finish.", "severity": "Caution" },
+    { "keywords": ["polyester", "nylon", "acrylic", "polyamide"], "reason": "A synthetic petroleum-based fiber that sheds microplastics in the wash.", "severity": "Caution" },
+    { "keywords": ["chromium"], "reason": "Used in some leather tanning and dye processes; residue can irritate skin.", "severity": "Caution" },
+    { "keywords": ["antimicrobial", "odor control", "odor-control", "silver ion"], "reason": "Often applied with a bonded chemical finish rather than the fiber itself.", "severity": "Caution" }
+  ],
+  "allergens": [
+    {
+      "id": "gluten",
+      "name": "Gluten",
+      "offTag": "en:gluten",
+      "definite": [
+        "wheat", "wheat flour", "wheat starch", "wheat gluten", "vital wheat gluten",
+        "barley", "rye", "triticale", "spelt", "farro", "kamut",
+        "farina", "semolina", "durum", "graham flour", "bulgur", "couscous",
+        "seitan", "brewer's yeast", "brewers yeast",
+        "malt", "malt extract", "malt flavoring", "malt flavouring", "malt syrup", "malt vinegar",
+        "hydrolyzed wheat protein", "hydrolysed wheat protein"
+      ],
+      "possible": [
+        "oats", "oat", "natural flavor", "natural flavour",
+        "modified food starch", "soy sauce", "dextrin", "caramel color", "caramel colour"
+      ],
+      "possibleNote": "Not a definite hit, but a common hidden source — verify with the manufacturer or look for a gluten-free label."
+    },
+    {
+      "id": "dairy",
+      "name": "Dairy / Milk",
+      "offTag": "en:milk",
+      "definite": ["milk", "cream", "butter", "buttermilk", "cheese", "whey", "casein", "caseinate", "lactose", "ghee", "yogurt", "yoghurt", "curds"],
+      "possible": ["natural flavor", "natural flavour"],
+      "possibleNote": "Natural flavor can occasionally carry trace dairy."
+    },
+    {
+      "id": "egg",
+      "name": "Egg",
+      "offTag": "en:eggs",
+      "definite": ["egg", "eggs", "egg white", "egg yolk", "albumin", "albumen", "mayonnaise", "meringue", "ovalbumin"],
+      "possible": [],
+      "possibleNote": ""
+    },
+    {
+      "id": "peanut",
+      "name": "Peanut",
+      "offTag": "en:peanuts",
+      "definite": ["peanut", "peanuts", "peanut oil", "peanut flour", "groundnut", "groundnuts"],
+      "possible": ["natural flavor", "natural flavour"],
+      "possibleNote": "Shared-equipment cross-contact is common even when not listed as an ingredient — check the allergen statement."
+    },
+    {
+      "id": "tree-nut",
+      "name": "Tree Nuts",
+      "offTag": "en:nuts",
+      "definite": ["almond", "almonds", "cashew", "cashews", "walnut", "walnuts", "pecan", "pecans", "pistachio", "pistachios", "hazelnut", "hazelnuts", "macadamia", "brazil nut", "brazil nuts", "pine nut", "pine nuts"],
+      "possible": [],
+      "possibleNote": ""
+    },
+    {
+      "id": "soy",
+      "name": "Soy",
+      "offTag": "en:soybeans",
+      "definite": ["soy", "soybean", "soybeans", "soy lecithin", "soy protein", "edamame", "tofu", "tamari"],
+      "possible": ["natural flavor", "natural flavour", "vegetable oil"],
+      "possibleNote": "Vegetable oil blends and natural flavor sometimes include soy derivatives."
+    },
+    {
+      "id": "shellfish",
+      "name": "Shellfish",
+      "offTag": "en:crustaceans",
+      "definite": ["shrimp", "prawn", "prawns", "crab", "lobster", "crawfish", "crayfish", "scallop", "scallops", "oyster", "oysters", "mussel", "mussels", "clam", "clams"],
+      "possible": [],
+      "possibleNote": ""
+    },
+    {
+      "id": "sesame",
+      "name": "Sesame",
+      "offTag": "en:sesame-seeds",
+      "definite": ["sesame", "sesame oil", "sesame seed", "sesame seeds", "tahini"],
+      "possible": [],
+      "possibleNote": ""
+    }
+  ]
+}
